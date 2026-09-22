@@ -1,0 +1,83 @@
+/* Write your CSS here */
+.latest-match-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background-color: #0f172a;
+  color: #ffffff;
+  font-family: 'Bree Serif';
+  padding: 10px;
+}
+
+@media screen and (max-width: 767px) {
+  .latest-match-container {
+    flex-direction: column;
+  }
+}
+
+.team-details-logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.team-details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.team-name {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.date {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.venue {
+  font-size: 16px;
+}
+
+.result {
+  font-size: 14px;
+}
+
+.competing-team-logo {
+  height: 250px;
+  width: 250px;
+  margin-left: 50px;
+}
+
+.seperator {
+  border: 2px solid #475569;
+  width: 90%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .seperator {
+    border: none;
+    width: 0;
+    margin-top:;
+    margin-bottom: 0;
+  }
+}
+
+.match-details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.match-title {
+  font-size: 18px;
+}
+
+.match-description {
+  font-size: 16px;
+}

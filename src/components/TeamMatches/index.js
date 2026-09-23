@@ -1,10 +1,13 @@
 // Write your code here
 import {Component} from 'react'
+import {Link} from 'react-router-dom'
 import Loader from 'react-loader-spinner'
 import 'react-loader-spinner/dist/loader/css/react-spinner-loader.css'
 
 import LatestMatch from '../LatestMatch'
 import MatchCard from '../MatchCard'
+import MatchStats from '../MatchStats'
+
 import './index.css'
 
 class TeamMatches extends Component {
@@ -101,6 +104,11 @@ class TeamMatches extends Component {
 
     return (
       <div className={`team-matches-container ${backGround}`}>
+        <Link to="/" className="nav-link">
+          <button className="back-button" type="button">
+            Back
+          </button>
+        </Link>
         <img className="team-image" src={teamBannerUrl} alt="team banner" />
         <p className="latest-match-title">Latest Matches</p>
         <div className="latest-match-container">
@@ -109,6 +117,7 @@ class TeamMatches extends Component {
             key={latestMatchDetails.id}
           />
         </div>
+        <MatchStats recentMatches={recentMatches} />
         <ul className="recent-matches-container">
           {recentMatches.map(eachMatch => (
             <MatchCard matchCardDetails={eachMatch} key={eachMatch.id} />

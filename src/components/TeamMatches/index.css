@@ -65,3 +65,21 @@
   width: 100%;
   margin-top: 20px;
 }
+
+.nav-link {
+  text-decoration: none;
+  align-self: flex-end;
+  margin-right: 20px;
+}
+
+.back-button {
+  background-color: #000000;
+  color: #ffffff;
+  font-size: 12px;
+  font-family: 'Roboto';
+  padding: 10px 20px;
+  outline: none;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+}

@@ -3,8 +3,12 @@ import './index.css'
 
 const MatchCard = props => {
   const {matchCardDetails} = props
-  const {result, competingTeam, competingTeamLogo, matchStatus} =
-    matchCardDetails
+  const {
+    result,
+    competingTeam,
+    competingTeamLogo,
+    matchStatus,
+  } = matchCardDetails
 
   let textColor
   if (matchStatus === 'Won') {

@@ -1,0 +1,22 @@
+.match-chart-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  background-color: #1c1c2b;
+  width: 80%;
+  height: 30%;
+}
+
+.match-chart-title {
+  color: #94a3b8;
+  font-size: 24px;
+  font-family: 'Roboto';
+  font-weight: 500;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  text-align: left;
+  align-self: flex-start;
+  margin-left: 10px;
+}
